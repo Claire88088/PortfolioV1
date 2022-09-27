@@ -396,7 +396,7 @@ h1 {
 }
 
 #projet_velos .front {
-    background: url("images/projets/projet_velos.png");
+    /* background: url("images/projets/projet_velos.png"); */
     background-size: cover;
 }
 
@@ -412,7 +412,7 @@ h1 {
 }
 
 #projet_integration .front {
-    background: url("images/projets/projet_integration.png");
+    /* background: url("images/projets/projet_integration.png"); */
     background-size: cover;
 }
 
