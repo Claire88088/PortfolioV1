@@ -1,0 +1,98 @@
+/* 
+    style pour une résolution moyenne : entre 768 et 992 px (tablettes)
+*/
+
+/*** SECTION ACCUEIL ***/
+.slide, #chevrons, #progress_bar
+{
+    display: none;
+}
+
+#presentation
+{
+    width: 80%;
+    top: 15%;
+}
+
+.background_small_resolution
+{
+    display: unset;
+}
+
+.background_small_resolution img 
+{
+    display: block;
+}
+
+#streamer
+{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+
+/*** CARACTERISTIQUES COMMUNES DES SECTIONS SERVICES ET PROJETS ***/
+#services_section, #projects
+{
+    padding-top: 115px;
+    padding-bottom: 100px;
+}
+
+.section_title
+{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.section_title p
+{
+    padding: 0 10px;
+}
+
+
+/*** SECTION SERVICES ***/
+#services
+{
+    display: unset;
+}
+
+#services_list
+{
+    padding-top: 30px;
+}
+
+#service_type
+{
+    height: 78px;
+}
+
+/*** SECTION PROJETS ***/
+#projects_menu ul
+{
+    width: 100%;
+    box-shadow: 2px 2px 5px #272727;
+    margin: auto;
+}
+
+#projects_menu li
+{
+    width: 100%;
+}
+
+.triangle
+{
+    visibility: hidden;
+}
+
+.info
+{
+    display: block;
+}
+
+
+/*** SECTION CONTACT ***/
+#address p
+{
+    line-height: normal;
+}

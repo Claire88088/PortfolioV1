@@ -1,0 +1,605 @@
+/* MENU */
+/*
+- Caractéristiques générales
+- Header
+- Section accueil
+- Caractéristiques communes des sections services et projets
+- Section services
+- Section projets
+- Section contact
+- Footer
+*/
+
+/* COULEURS :
+texte : #56595d
+fond : #ffffff et #f5f5f5
+blanc : #ffffff
+bleu principal : #5cadd3
+bleu foncé : #468cad
+titres, liens menu principal : #272727
+gris des décos, bordures formulaire : #8c8c8c
+fond menu projets : #e5e5e5
+*/
+
+/*** CARACTERISTIQUES GENERALES ***/
+body
+{
+    background: linear-gradient(#ffffff, #f5f5f5);
+    max-width: 1440px;
+    margin: auto;
+    font-family: 'roboto', 'Verdana', 'Arial', sans-serif;
+    font-size: 1em;
+    line-height: 1.8em;
+    color: #56595d;
+}
+
+h1
+{
+    text-transform: uppercase;
+    font-size: 2.2em;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+}
+
+h2
+{
+    text-transform: uppercase;
+    font-size: 2.8em;
+    font-weight: bold;
+    color: #272727;
+    margin: 0;
+}
+
+h3
+{
+    font-size: 1.2em;
+    color: #272727;
+    margin: 0;
+}
+
+/* éléments communs du site */
+img
+{
+    max-width: 100%;
+}
+
+a
+{
+    text-decoration: none;
+    color: #56595d;
+}
+
+ul
+{
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button
+{
+    background: #5cadd3;
+    font-size: 1em;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 10px 16px;
+    border: none;
+    border-bottom: 3px solid #468cad;
+    border-radius: 3px;
+}
+
+.button:hover, .eye:hover
+{
+    background: #468cad;
+}
+
+/* décorations */
+.blue_round, .small_blue_round
+{
+    background: #5cadd3;
+    border: solid #ffffff 5px;
+}
+
+
+/*** HEADER AVEC MENU PRINCIPAL ***/
+header
+{
+    max-width: inherit;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    z-index: 5;
+}
+
+#agency_logo
+{
+    height: 57px;
+    margin-left: 10%;
+}
+
+/* menu principal */
+nav
+{
+    width: 24%;
+    margin-right: 10%;  
+}
+
+nav li
+{
+    padding: 0 20px;
+    border-top: transparent solid 3px;
+}
+
+nav a
+{   
+    height: 100px;
+    display: flex;
+    align-items: center; 
+}
+
+nav a:hover, nav a:first-child
+{
+    color: #272727;
+}
+
+nav li:hover, nav li:first-child
+{
+    border-top-color: #5cadd3;
+}
+
+
+/*** SECTION ACCUEIL ***/
+#home
+{
+    padding-top: 100px;  
+}
+
+#slides
+{
+    position: relative;
+    overflow: hidden; 
+}
+
+.background_small_resolution
+{
+    display: none;
+}
+
+/* slides */
+.slide img
+{
+    max-width: 110%;
+    transform: translateX(-5%);
+    display: block;
+}
+
+#slide1
+{
+    position: relative; /* pour afficher la slide 2 : mettre un display: none */
+}
+
+#slide2
+{
+    position: relative;
+    transform: translateY(-100%);
+    display: none; /* Pour afficher la slide 2 : enlever le display: none */
+}
+
+#presentation
+{ 
+    width: 560px;
+    height: 170px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1em;
+    position: absolute;
+    top: 33%;
+    left: 10%;
+    z-index: 2;
+}
+
+#name
+{
+    color: #5cadd3;
+}
+
+#presentation p
+{
+    margin-top: 13px;
+    margin-bottom: 18px;  
+}
+
+/* chevrons */
+.chevron
+{
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.2);
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+}
+
+#chevron_left
+{ 
+    transform: translate(-50%, -50%); 
+}
+
+.fa-chevron-left
+{
+    transform: translateX(100%);
+}
+
+#chevron_right
+{
+    margin-left: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.fa-chevron-right
+{
+    transform: translateX(-100%);
+}
+
+/* barre de progression */
+#progress_bar    
+{
+    position: absolute;
+    bottom: 0%;
+    z-index: 3;
+    height: 4px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#progress_item
+{
+    height: 4px;
+    width: 9%;
+    background: #5cadd3;
+    margin-top: 0;
+}
+
+
+/*** CARACTERISTIQUES COMMUNES DES SECTIONS SERVICES ET PROJETS ***/
+.section
+{
+    background: linear-gradient(#f5f5f5, #ffffff);
+}
+
+#services_section, #projects
+{
+    padding: 150px 0;
+}
+
+.section_title
+{
+    width: 40%;
+    margin: 0 auto 50px auto;
+    text-align: center;
+}
+
+.section_title p
+{
+    padding: 0 20px;
+}
+
+/* déco des sections */
+.deco
+{
+    width: 140px;
+    height: 1px;
+    background: #8c8c8c;
+    margin: 25px auto;
+}
+
+.blue_round
+{
+    height: 15px;
+    width: 15px;
+    margin: auto;
+    border-radius: 15px;
+    transform: translateY(-50%);   
+}
+
+
+/** SECTION SERVICES **/
+#services
+{
+    display: flex;
+}
+
+#computer_img
+{
+    text-align: center;
+    flex: 1;
+    align-self: flex-start;
+}
+
+#services_list
+{
+    flex: 1;
+    padding: 85px 40px 0 40px;        
+}
+
+.service_type
+{
+    margin-bottom: 25px;    
+}
+
+.service_description
+{
+    margin-left: 95px;      
+}
+
+.service_description p
+{
+    margin-top: 0;
+}
+
+.icon
+{
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    border: solid #8c8c8c 1px; 
+    border-radius: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.icon i
+{
+    color: #5cadd3;
+    margin: auto;
+}
+
+.fa-chart-pie
+{
+    font-size: 25px;
+}
+
+.fa-chart-line, .fa-cubes
+{
+    font-size: 30px;
+}
+
+.small_blue_round
+{
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+
+
+/** SECTION PROJETS  **/
+/* menu */
+#projects_menu
+{
+    margin-bottom: 50px;
+    width: 346px;
+    max-width: 100%;
+    margin: 50px auto;
+}
+
+#projects_menu ul
+{
+    border-radius: 2px;
+}
+
+#projects_menu li
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 30px;
+    background: #e5e5e5;
+    padding: 5px;
+    border-bottom: solid 3px transparent;
+    position: relative;
+}
+
+
+#projects_menu li:hover, #projects_menu li:first-child
+{
+    background: #5cadd3;
+    border-bottom: solid 3px #468cad;
+}
+
+#projects_menu li:first-child
+{
+    border-radius: 2px 0 0 2px;
+}
+
+#projects_menu li:last-child
+{
+    border-radius: 0 2px 2px 0;
+}
+
+.project_selection:hover a, .project_selection:first-child a
+{
+    color: #ffffff;
+}
+
+.triangle
+{
+    width: 0px;
+    border: solid 10px transparent;
+    border-top-color: #468cad;
+    position: absolute;
+    bottom: -23px;
+    display: none;
+    z-index: 2;
+}
+
+.project_selection:hover .triangle, .project_selection:first-child .triangle
+{
+    display: block;
+}
+
+/* projets du portfolio */
+#portfolio
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project
+{
+    width: 260px;
+    height: 175px;
+    position: relative;
+}
+
+.project:hover .info, .project:nth-child(4) .info
+{
+    display: block;
+}
+
+.info
+{
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    width: 100%;
+    height: 33%;
+    padding: 5px 10px;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    line-height: 1.5em;
+    display: none;
+}
+
+.info p
+{
+    margin: 0;
+}
+
+.portfolio_title
+{
+    font-weight: 700;
+}
+
+.eye /* VOIR A REGROUPER AVEC AUTRES RONDS */
+{
+    width: 36px;
+    height: 36px;
+    background: #5cadd3;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    left: 80%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-eye
+{
+    color: #ffffff;
+    padding: 10px;
+}
+
+
+/*** SECTION CONTACT ***/
+#contact
+{
+    width: 100%;
+    height: 630px;
+    position: relative;
+}
+
+#blue_layer
+{
+    width: 100%;
+    height: 100%;
+    background: rgba(92, 173, 211, 0.3);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+#map
+{
+    width: 100%;
+    height: 100%;
+    border: none;
+    z-index: 0;
+    
+}
+
+/* formulaire */
+form
+{
+    width: 25%;
+    height: 490px; /* = 530px - padding */
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    position: absolute;
+    top: 45px;
+    left: 65%;
+    z-index: 2;
+}
+
+form h2
+{
+    text-transform: capitalize;
+    font-size: 1.6em;
+}
+
+#tel
+{
+    text-decoration: underline dotted;
+}
+
+#address 
+{
+    line-height: 5px;
+    margin: 20px 0;
+}
+
+input, textarea
+{
+    width: 100%;
+    box-sizing: border-box;
+    border: solid 1px #8c8c8c;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-family: 'roboto', 'Verdana', 'Arial', sans-serif;
+    font-size: 0.9em;
+}
+
+
+/*** FOOTER ***/
+footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    background: #e5e5e5;
+    height: 50px;
+}

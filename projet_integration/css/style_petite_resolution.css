@@ -1,0 +1,175 @@
+/* style pour les petites résolutions (< 768px : smartphones) */
+
+/* MENU */
+/*
+- Caractéristiques générales
+- Header
+- Section accueil
+- Caractéristiques communes des sections services et projets
+- Section services
+- Section projets
+- Section contact
+*/
+
+/*** CARACTERISTIQUES GENERALES ***/
+body
+{
+    max-width: 768px;
+    line-height: 1.8em;
+}
+
+ul
+{
+    flex-direction: column;
+    margin: 0;
+}
+
+h1
+{
+    font-size: 2em;
+}
+
+h2
+{
+    font-size: 1.8em;
+}
+
+
+/*** HEADER ***/
+header
+{
+    flex-direction: column;
+    height: 200px;
+    padding: 10px 0;
+}
+
+nav
+{
+    margin-right: 0;
+}
+
+nav a, nav li
+{
+    height: auto;
+    border-bottom: transparent solid 3px;
+    border-top: unset;
+}
+
+nav li:hover, nav li:first-child
+{
+    border-bottom-color: #5cadd3;
+}
+
+#agency_logo
+{
+    margin-left: 0;
+}
+
+
+/*** SECTION ACCUEIL ***/
+#home
+{
+    padding-top: 220px;
+}
+
+#presentation
+{
+    top: 10%;
+}
+
+#background
+{
+    max-width: unset;
+    max-height: 400px;
+}
+
+
+/*** CARACTERISTIQUES COMMUNES DES SECTIONS SERVICES ET PROJETS ***/
+#services_section, #projects
+{
+    padding-top: 225px;
+    padding-bottom: 0;
+}
+
+.section_title
+{
+    width: 100%;
+}
+
+
+/*** SECTION SERVICES ***/
+#computer_img
+{
+    display: none;
+}
+
+.service_type
+{
+    position: relative;
+    height: unset;
+}
+
+#services_list
+{
+    padding-top: 0;
+}
+
+.icon
+{
+    position: relative;
+    margin: auto;
+}
+
+.service_description
+{
+    margin: 10px auto 30px auto;
+    text-align: center;
+}
+
+/*** SECTION PROJETS ***/
+#projects_menu ul
+{
+    width: 86.5px;
+    box-shadow: 5px 1px 5px #272727;
+}
+
+#projects_menu li:first-child 
+{
+    border-radius: 2px 2px 0 0;
+}
+
+#projects_menu li:last-child
+{
+    border-radius: 0 0 2px 2px;
+}
+
+
+
+/*** SECTION CONTACT ***/
+#contact
+{
+    padding-top: 225px;
+    height: 805px; /* 490px (hauteur du formulaire) + 50%*630px (hauteur de la section) */
+    position: relative;
+}
+
+#map, #blue_layer
+{
+    position: absolute;
+    top: 225px;
+    height: 315px;
+}
+
+form
+{
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    top: 540px;
+    left: 0;
+}
+
+#address p
+{
+    line-height: 5px;
+}

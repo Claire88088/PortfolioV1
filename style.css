@@ -1,0 +1,493 @@
+/* couleurs */
+/* Photo by <a href="https://unsplash.com/@fantasyflip?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Philipp Katzenberger</a> on <a href="https://unsplash.com/s/photos/computer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    rgb(9, 29, 43)
+    rgb(43, 161, 179)
+    rgb(169, 197, 202)      rgb(239, 244, 245) 95% lighter  #90b5bb 65%
+    rgb(12, 121, 158)
+
+    rgb(0, 35, 84)
+    rgb(9, 29, 43) bas de l'image
+
+*/
+
+@font-face {
+    font-family: 'lemonchi';
+    src: url("/fonts/lemonchi-webfont.woff") format("woff"),
+        url("/fonts/lemonchi-webfont.woff2") format("woff2"),
+        url("/fonts/LEMONCHI.ttf") format("ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(239, 244, 245);
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(169, 197, 202);
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.page {
+    background-color: black;
+}
+
+a {
+    color: rgb(169, 197, 202);
+    text-decoration: none;
+    transition: 50ms;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+ul li {
+    padding: 10px 0;
+    line-height: 1.5em;
+}
+
+section {
+    padding: 20px 10px;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.background-logo {
+    background-color: rgba(239, 244, 245, 0.8);
+    border-radius: 1px;
+    padding: 2px;
+}
+
+.big-logo {
+    height: 60px !important;
+}
+
+.bigger-logo {
+    height: 70px !important;
+}
+
+.light {
+    background-color: rgba(169, 197, 202, 0.8);
+    color:rgb(9, 29, 43);
+}
+
+.dark {
+    background-color: rgba(12, 121, 158, 0.5);
+    color: rgb(239, 244, 245);
+}
+
+.headband--dark {
+    background: rgba(9, 29, 43, 0.85);
+    color: rgb(239, 244, 245);
+}
+
+.link--dark {
+    color: rgb(12, 121, 158);
+}
+
+.back.dark strong  {
+    color:rgb(43, 161, 179);
+}
+
+/* SECTIONS style général */
+section {
+    background-image: linear-gradient(black, #0c799e);
+}
+
+.section_title {
+    color: rgb(169, 197, 202);
+    margin: 50px 0;
+    text-align: center;
+    font-family: 'lemonchi', cursive;
+}
+
+.section_content {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+
+
+/* FLIP */
+.flip_contener {
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.flip_contener:hover .flip {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flip {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: all .7s ease-in-out;
+}
+
+.front,
+.back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    line-height: 1.5em;
+}
+
+.flip_headband {
+    width: 100%;   
+}
+
+.flip_headband_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.flip_title {
+    font-family: 'Ubuntu', sans-serif;
+    color: inherit;
+    font-weight: 600;
+    font-size: 2em;
+    text-align: center;
+    padding: 10px 20px; 
+}
+
+.flip_subtitle {
+    font-size: 1.5em;
+    font-weight: 100;
+    color: inherit;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.flip_technos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.flip_technos img {
+    height: 50px;
+    margin: 5px;
+}
+
+.flip_item {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.flip_item_title {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.back.dark .flip_item_title {
+    color:  rgb(144, 181, 187);
+}
+
+.back.light .flip_item_title {
+    color:  rgb(12, 121, 158);
+}
+
+
+/* --------------------------------------------------- */
+/* MENU PRINCIPAL */
+#main-nav {
+    background: rgba(9, 29, 43, 0.5);
+    padding: 10px;
+    text-align: center;
+    /* position: sticky;
+    top:0;
+    z-index: 2; */
+}
+
+#main-nav a {
+    font-size: 1.2em;
+    padding: 0 20px;
+}
+
+
+
+/* --------------------------------------------------- */
+/* SECTION HERO */
+#hero {
+    background: url("images/fond3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    padding: 0;
+}
+
+#headband {
+    background:rgba(9, 29, 43, 0.5);
+    margin-top: 20%;
+}
+
+h1 {
+    font-family: 'lemonchi', cursive;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(43, 161, 179);
+}
+
+#headband h2, 
+#headband h3 {
+    color: rgb(239, 244, 245);
+    margin-bottom: 20px;
+}
+
+#content {
+    margin: 0 auto;
+    width: 50%;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#prenom, 
+#nom {
+    display: inline-block;
+}
+
+#contact-btn {
+    color: rgb(43, 161, 179);
+    border: solid 1px rgb(43, 161, 179);
+    border-radius: 15px;
+    padding: 10px;
+    transition: 50ms;
+}
+
+#contact-btn:hover {
+    opacity: 1;
+    color: rgb(239, 244, 245);
+    background-color: rgb(43, 161, 179);
+}
+
+
+
+
+/* --------------------------------------------------- */
+/* SECTION FORMATION */
+
+.formation .front,
+.formation .back {
+    width: 400px;
+    height: 500px;
+}
+
+.formation_year,
+.experience_date {
+    font-size: 1.2em;
+}
+
+.formation_logo {
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+#licence-pro ul li {
+    padding: 7px 0;
+    line-height: 1.2em;
+}
+
+#licence-pro .back {
+    line-height: 1.2em;
+}
+
+
+
+
+/* --------------------------------------------------- */
+/* SECTION EXPERIENCE */
+#experience-section .section_content {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.experience {
+    flex: 1;
+}
+
+.experience .front,
+.experience .back {
+    width: 100%;
+    height: 450px;
+}
+
+.experience_logo {
+    margin-bottom: 40px;
+}
+
+.experience .flip_technos img {
+    height: 60px;
+    margin: 0 10px;
+}
+
+
+
+
+/* --------------------------------------------------- */
+/* SECTION PROJETS */
+.projet .front,
+.projet .back {
+    width: 450px;
+    height: 770px;
+}
+
+.projet_technos img {
+    height: 50px;
+    margin: 5px;
+}
+
+.projet i {
+    margin-right: 10px;
+}
+
+#projet_carte .front {
+    background: url("images/projets/projet_carte.PNG");
+    background-size: cover;
+}
+
+#projet_velos {
+    padding: 5px 0;
+}
+
+#java-logo {
+    height: 80px;
+}
+
+#projet_velos .front {
+    background: url("images/projets/projet_velos.png");
+    background-size: cover;
+}
+
+#projet_velos ul li,
+#projet_blog ul li {
+    padding: 5px 0;
+    line-height: 1em;
+}
+
+#projet_velos .back,
+#projet_blog .back {
+    line-height: 1em;
+}
+
+#projet_integration .front {
+    background: url("images/projets/projet_integration.png");
+    background-size: cover;
+}
+
+
+/* --------------------------------------------------- */
+/* SECTION TECHNOS */
+.technos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.techno {
+    height: 100px;
+    margin: 20px;
+    transition: 1s;
+}
+
+.techno img {
+    height: 100%;
+}
+
+.techno:hover {
+    transform: scale(2);
+}
+
+/* -------------------------------------------- */
+/* FOOTER */
+footer nav {
+    padding: 10px;
+    text-align: center;
+}
+
+footer nav a {
+    font-size: 1.2em;
+    padding: 0 20px;
+}
+
+
+/* --------------------------------------------------- */
+/* BOUTON HAUT DE PAGE */
+#gotop-btn {
+    display: none;
+    border: solid 1px #2ba1b3;
+    border-radius: 25px;
+    background-color: rgba(9, 29, 43, 0.8);
+    padding: 10px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    transition: 50ms;
+}
+
+#gotop-btn:hover {
+    background-color: rgba(44, 162, 181, 0.8);
+}
+
+#gotop-btn a {
+    color: #2ba1b3;
+}
+
+#gotop-btn:hover a {
+    color: black;
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 850px) {
+    .formation {
+        margin-bottom: 10px;
+    }  
+}
+
+@media screen and (max-width: 500px) {
+    .projet .front {
+        width: 300px;
+    }
+}

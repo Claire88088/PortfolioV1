@@ -1,0 +1,178 @@
+/* colors
+#091d2b rgb(9, 29, 43)
+#2ba1b3 rgb(43, 161, 179)
+#a9c5ca rgb(169, 197, 202)  #eff4f5 95% lighter
+#0c799e rgb(12, 121, 158)
+
+#002354
+#091D2B bas de l'image
+*/
+
+/* définition des animations */
+@keyframes appear {
+    0% {
+        /* color: #002354; */
+        transform: scale(0);  
+    }
+
+    50% {
+        color: #a9c5ca;
+        transform: scale(1.2);
+    }
+
+    100% {
+        color: #2ba1b3;
+        transform: scale(1);
+    }
+}
+
+@keyframes appear-contact {
+    0% {
+        /* color: #002354; */
+        transform: scale(0);  
+    }
+
+    45% {
+        color: #a9c5ca;
+        transform: scale(1.5);
+    }
+
+    75% {
+        color: #2ba1b3;
+        transform: scale(0.7);
+    }
+
+    100% {
+        /* color: #2ba1b3; */
+        transform: scale(1);
+    }
+}
+
+@keyframes bigger {
+    0% {
+        /* color: #002354; */
+    }
+
+    25% {
+        transform: scale(2);
+    }
+
+    50% {
+        transform: scale(0.8);
+        color: #a9c5ca;
+    }
+
+    75% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+        color: #2ba1b3;
+    }
+}
+
+
+/** animations du hero**/
+/* #b, #i, #e, #n, #v, #e-2, #n-2, #u, #e-3  */
+#c, #l, #a, #i, #r, #e, #b, #o, #u, #t, #o-2, #n, #contact-btn, #contact-btn_content
+/* #c, #o, #n, #t, #a, #c, #t-2, #e, #z, #tiret, #m, #o-2, #i, #excl-point */
+{ 
+    display: inline-block;
+    /* font-size: 150%; */
+}
+
+#c
+{
+    animation: appear 2s forwards;
+}
+
+#l 
+/* #o */
+{
+    animation: appear 1s 150ms forwards;
+}
+
+#a
+/* #n */
+{
+    animation: appear 1s 300ms forwards;
+}
+
+#i
+/* #t */
+{
+    animation: appear 1s 450ms forwards;
+}
+
+#r
+/* #a */
+{
+    animation: appear 1s 600ms forwards;
+}
+
+#e
+/* #c-2 */
+{
+    animation: appear 1s 750ms forwards;
+}
+
+#b
+/* #t-2 */
+{
+    animation: appear 1s 900ms forwards;
+}
+
+#o
+/* #e */
+{
+    animation: appear 1s 1050ms forwards;
+}
+
+#u
+/* #z */
+{
+    animation: appear 1s 1200ms forwards;
+}
+
+#t
+/* #tiret */
+{
+    animation: appear 1s 1350ms forwards;
+}
+
+#o-2
+/* #m */
+{
+    animation: appear 1s 1500ms forwards;
+}
+
+#n
+/* #o-2 */
+{
+    animation: appear 1s 1650ms forwards;
+}
+
+#contact-btn
+/* #i */
+{
+    /* animation: appear 1s 1800ms alternate-reverse 2; */
+    animation: appear-contact 2s 1800ms forwards;
+    /* animation: bigger 1s 1800ms forwards; */
+}
+/*
+#excl-point {
+    animation: appear 1s 1950ms forwards;
+} */
+
+#contact-btn_content {
+    /* animation: appear-contact 1s 1950ms alternate-reverse 2; */
+    /* animation: bigger 1s 1800ms alternate-reverse 2; */
+}
+
+
+/* #excl-point {
+    display: inline-block;
+    animation: bigger 1500ms 1950ms forwards;
+} */
+
