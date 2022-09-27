@@ -245,7 +245,9 @@ section {
 #main-nav {
     background: rgba(9, 29, 43, 0.9);
     padding: 10px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    /* text-align: center; */
 }
 
 #main-nav a {
@@ -496,6 +498,17 @@ footer nav a {
 
 
 /* RESPONSIVE */
+@media screen and (max-width: 1050px) {
+    #main-nav {
+        display: block;
+        text-align: center;
+    }
+
+    #main-nav div:first-of-type {
+        margin-bottom: 10px;
+    }
+}
+
 @media screen and (max-width: 850px) {
     .formation {
         margin-bottom: 10px;
@@ -507,7 +520,7 @@ footer nav a {
         display: flex;
         flex-direction: column;
         padding: 20px;
-        width: 150px;
+        width: 185px;
     }
 
     #main-nav--responsive {
