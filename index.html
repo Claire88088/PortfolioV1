@@ -21,16 +21,28 @@
 
 <body>
     <div class="page">
-        
-
-        <section id="hero">
+        <div id="navigation">
             <nav id="main-nav">
                 <a href="#formation-section">Formation</a>
                 <a href="#experience-section">Expérience</a>
                 <a href="#projets-section">Projets</a>
                 <a href="#technos-section">Technologies</a>
+                <a href="CVClaireBouton.pdf" target="_blank">CV</a>
             </nav>
-            
+
+            <div id="navigation--responsive">
+                <i id="bars-icon" class="fa fa-solid fa-bars"></i>
+                <nav id="main-nav--responsive">
+                    <a href="#formation-section">Formation</a>
+                    <a href="#experience-section">Expérience</a>
+                    <a href="#projets-section">Projets</a>
+                    <a href="#technos-section">Technologies</a>
+                    <a href="CVClaireBouton.pdf" target="_blank">CV</a>
+                </nav>
+            </div>
+        </div>
+
+        <section id="hero"> 
             <div id="headband">
                 <div id="content">
                     <h1><span id="prenom"><span id="c">C</span><span id="l">l</span><span id="a">a</span><span
@@ -575,9 +587,11 @@
                             </ul>
                         </div>
 
-                        <a class="link--dark" href="projet_integration/index.html" target="_blank">Voir le site</a>
-                        <a class="link--dark" href="https://github.com/Claire88088/P1" target="_blank"><i class="fab fa-github"></i>Voir le
-                            dépôt</a>
+                        <div class="flip_link">
+                            <a class="link--dark" href="projet_integration/index.html" target="_blank">Voir le site</a>
+                            <a class="link--dark" href="https://github.com/Claire88088/P1" target="_blank"><i class="fab fa-github"></i>Voir le
+                                dépôt</a>
+                        </div>
 
                     </div>
                 </div>

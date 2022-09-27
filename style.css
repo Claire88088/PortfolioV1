@@ -229,16 +229,23 @@ section {
     color:  rgb(12, 121, 158);
 }
 
+.flip_link a {
+    margin: 0 20px;
+}
+
 
 /* --------------------------------------------------- */
-/* MENU PRINCIPAL */
+/* NAVIGATION */
+#navigation {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
 #main-nav {
-    background: rgba(9, 29, 43, 0.5);
+    background: rgba(9, 29, 43, 0.9);
     padding: 10px;
     text-align: center;
-    /* position: sticky;
-    top:0;
-    z-index: 2; */
 }
 
 #main-nav a {
@@ -246,6 +253,9 @@ section {
     padding: 0 20px;
 }
 
+#navigation--responsive {
+    display: none;
+}
 
 
 /* --------------------------------------------------- */
@@ -260,7 +270,9 @@ section {
 
 #headband {
     background:rgba(9, 29, 43, 0.5);
-    margin-top: 20%;
+    /* margin-top: 20%; */
+    position: relative;
+    top: 20%;
 }
 
 h1 {
@@ -478,12 +490,49 @@ footer nav a {
     color: black;
 }
 
+#gotop-btn a:hover {
+    opacity: unset;
+}
+
 
 /* RESPONSIVE */
 @media screen and (max-width: 850px) {
     .formation {
         margin-bottom: 10px;
     }  
+}
+
+@media screen and (max-width: 750px) {
+    #navigation--responsive {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        width: 150px;
+    }
+
+    #main-nav--responsive {
+        display: flex;
+        flex-direction: column;
+        transform: translateX(-200px);
+        transition: 1s;
+        background: rgba(9, 29, 43, 0.9);
+        padding: 10px;
+        margin-left: -10px;
+    }
+
+    #main-nav--responsive a {
+        padding: 5px 0;
+    }
+
+    #bars-icon {
+        margin-bottom: 10px;
+        font-size: 2em;
+        color:rgb(169, 197, 202);
+    }
+
+    #main-nav {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 500px) {
