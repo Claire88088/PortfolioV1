@@ -332,8 +332,8 @@ h1 {
 
 .formation .front,
 .formation .back {
-    width: 400px;
-    height: 500px;
+    width: 410px;
+    height: 520px;
 }
 
 .formation_year,
@@ -342,20 +342,18 @@ h1 {
 }
 
 .formation_logo {
-    height: 60px;
+    height: 75px;
     margin-bottom: 20px;
 }
 
 #licence-pro ul li {
-    padding: 7px 0;
+    padding: 5px 0;
     line-height: 1.2em;
 }
 
 #licence-pro .back {
     line-height: 1.2em;
 }
-
-
 
 
 /* --------------------------------------------------- */
@@ -372,7 +370,7 @@ h1 {
 .experience .front,
 .experience .back {
     width: 100%;
-    height: 450px;
+    height: 470px;
 }
 
 .experience_logo {
