@@ -482,6 +482,9 @@ footer nav a {
 /* BOUTON HAUT DE PAGE */
 #gotop-btn {
     display: none;
+    width: 40px;
+    height: 40px;
+    color: #2ba1b3;
     border: solid 1px #2ba1b3;
     border-radius: 25px;
     background-color: rgba(9, 29, 43, 0.8);
@@ -494,18 +497,14 @@ footer nav a {
 
 #gotop-btn:hover {
     background-color: rgba(44, 162, 181, 0.8);
-}
-
-#gotop-btn a {
-    color: #2ba1b3;
-}
-
-#gotop-btn:hover a {
     color: black;
+    opacity: unset;
 }
 
-#gotop-btn a:hover {
-    opacity: unset;
+#gotop-btn i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* ------------------------------------------------ */

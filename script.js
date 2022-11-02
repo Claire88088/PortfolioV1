@@ -1,3 +1,4 @@
+
 var gotopBtn = document.getElementById('gotop-btn');
 var barsIcon = document.getElementById('bars-icon');
 var responsiveMenu = document.getElementById('main-nav--responsive');
