@@ -305,10 +305,10 @@ h1 {
 }
 
 #content {
-    margin: 0 auto;
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 50px 0;
-    text-align: center;
 }
 
 #prenom, 
@@ -320,7 +320,7 @@ h1 {
     color: rgb(43, 161, 179);
     border: solid 1px rgb(43, 161, 179);
     border-radius: 15px;
-    padding: 10px;
+    padding: 10px 15px;
     transition: 50ms;
 }
 
